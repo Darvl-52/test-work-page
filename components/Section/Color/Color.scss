@@ -1,0 +1,44 @@
+.variant-color {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 52px;
+  }
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+
+  &-group {
+    display: flex;
+    column-gap: 17px;
+  }
+
+  &-button {
+    @include square(28px);
+    border: none;
+    position: relative;
+
+    &-white {
+      border: 1px solid var(--color-gray-light);
+      background-color: var(--color-white);
+
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        width: 34px;
+        height: 1px;
+        background-color: var(--color-gray);
+      }
+    }
+
+    &-black {
+      background-color: var(--color-black);
+    }
+
+    &-creamy {
+      background-color: var(--color-creamy);
+    }
+  }
+}

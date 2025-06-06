@@ -1,0 +1,50 @@
+.variant-sizes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 31px;
+
+  &-group {
+    display: flex;
+    column-gap: 14px;
+  }
+
+  &-button {
+    position: relative;
+    width: 65px;
+    height: 31px;
+    padding: 9px;
+    opacity: 1;
+    transition-duration: var(--transition-duration);
+
+    @include hover {
+      opacity: 0.6;
+    }
+  }
+}
+
+@mixin contentStatus {
+  color: var(--color-gray-light);
+  position: absolute;
+  bottom: -16px;
+}
+
+.last {
+  &::after {
+    @include contentStatus;
+
+    content: 'мало';
+  }
+}
+
+.soon {
+  cursor: not-allowed;
+  color: var(--color-gray-light);
+  border: 1px solid var(--color-gray-light) !important;
+
+  &::after {
+    @include contentStatus;
+
+    content: 'подписка';
+  }
+}

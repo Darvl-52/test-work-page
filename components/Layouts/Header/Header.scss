@@ -1,0 +1,66 @@
+.header {
+  padding-block: fluid(31, 15);
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+
+    @include tablet {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    justify-content: flex-end;
+
+    @include tablet {
+      display: contents;
+    }
+  }
+
+  &__logo {
+    @include flex-center;
+    grid-column: 2;
+
+    @include tablet {
+      flex-shrink: 0;
+      order: 2;
+    }
+
+    &-img {
+      width: fluid(54, 38);
+      height: fluid(24, 17);
+      mix-blend-mode: darken;
+    }
+  }
+
+  &__actions {
+
+    &-list {
+      display: flex;
+      column-gap: 16px;
+
+      @include tablet {
+        order: 1;
+        column-gap: 8px;
+        flex-direction: row-reverse;
+      }
+    }
+  }
+
+  &__cart {
+    display: flex;
+    align-items: center;
+    grid-column-start: 3;
+    justify-self: end;
+
+    @include tablet {
+      order: 3;
+    }
+  }
+}

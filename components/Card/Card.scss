@@ -1,0 +1,45 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  row-gap: fluid(15, 9);
+
+  max-width: 333px;
+  width: 100%;
+
+  &__img {
+    width: 100%;
+    flex-shrink: 0;
+    height: fluid(444, 222);
+    object-fit: cover;
+  }
+
+  &__top {
+
+    &-title {
+      font-size: 10px;
+      line-height: 14px;
+      text-transform: lowercase;
+      margin-bottom: fluid(10, 5);
+
+      @include tablet {
+        text-transform: uppercase;
+      }
+    }
+
+    &-price {
+      font-size: 10px;
+      text-transform: uppercase;
+
+      @include tablet {
+        color: var(--color-gray-middle);
+      }
+
+      &-old {
+        margin-left: 10px;
+        color: var(--color-gray-middle);
+        text-decoration-line: line-through;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
