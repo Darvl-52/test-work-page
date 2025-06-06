@@ -48,12 +48,11 @@ const SwiperImageContent: ImageType[] = [
           <h1 class="main__card-body-top-title">
             ЖАКЕТ УДЛИНЁННЫЙ, БЕЛЫЙ
             <span>
-              <NuxtImg
-                  src="/icons/BookMark.svg"
-                  loading="lazy"
-                  width="24"
-                  height="24"
-                  class="main__card-body-top-icon visible-mobile"
+              <Button
+                  label="Добавить в закладки"
+                  :icon="{name: 'Bookmark', alt: 'Закладка', width: 24, height: 24}"
+                  class-name="main__card-body-top-icon visible-mobile"
+                  is-label-hidden
               />
             </span>
           </h1>
