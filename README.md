@@ -1,75 +1,30 @@
-# Nuxt Minimal Starter
+# 🚀 Тестовое задание — Frontend (Nuxt 3)
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Привет! Это решение тестового задания на позицию Frontend-разработчика. Проект реализован с использованием **Nuxt 3**, препроцессора **SCSS** и библиотеки **clsx** для управления классами.
 
-## Setup
+## 🔧 Стек технологий
 
-Make sure to install dependencies:
+- **Nuxt 3** — современный фреймворк на базе Vue 3 с поддержкой SSR и Composition API  
+- **SCSS** — модульные и читаемые стили  
+- **clsx** — удобное условное объединение CSS-классов  
+- **TypeScript** *(если использовался)* — строгая типизация и автодополнение  
+
+## ⚙️ Установка и запуск проекта
 
 ```bash
-# npm
+# Клонировать репозиторий
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+
+# Установить зависимости
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# Запустить локальный сервер
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+✨ Особенности реализации
+Семантическая вёрстка
+Адаптивный интерфейс
+Лаконичный и поддерживаемый код
+Чистая организация классов через clsx
+Выделенная логика и стили
