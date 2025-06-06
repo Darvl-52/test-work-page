@@ -1,13 +1,13 @@
 .variant-color {
   margin-top: 40px;
 
-  @include tablet {
-    margin-top: 52px;
-  }
-
   display: flex;
   flex-direction: column;
   row-gap: 6px;
+
+  @include tablet {
+    margin-top: 52px;
+  }
 
   &-group {
     display: flex;
